@@ -48,6 +48,7 @@ dependencies {
 publishing {
     val libName = "FastLogger"
     val artifactIdValue = "fast-logger"
+    val descriptionValue = "fast logger"
     val versionValue = "1.0.0"
     publications {
         create<MavenPublication>("mavenJava") {
@@ -58,7 +59,7 @@ publishing {
 
             pom {
                 name = libName
-                description = "app tracer"
+                description = descriptionValue
                 url = "https://github.com/fastcv-cc/$libName"
                 licenses {
                     license {
